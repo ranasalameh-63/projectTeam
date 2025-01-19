@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.container {
+    background-color: #C4C1E4;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 3px #ac7ac9;
+    width: 500px;
+    max-width: 90%; 
+    padding: 20px 30px;
+    animation: bombing 4s 2s ease-in-out infinite;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.delivery-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.delivery-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 48%;
+    cursor: pointer;
+}
+
+.delivery-options input {
+    display: none;
+}
+
+.delivery-options input:checked + span {
+    font-weight: bold;
+    color: #8450a2;
+}
+
+.delivery-options small {
+    color: #777;
+    font-size: 12px;
+}
+
+.delivery-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+h3 {
+    margin: 20px 0 10px;
+}
+
+.payment-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.payment-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.payment-options input {
+    display: none;
+}
+
+.payment-options input:checked + span {
+    font-weight: bold;
+    color: #8450a2;
+}
+
+.info-box {
+    background-color: #e9dcf0;
+    color: #8450a2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.credit-card {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.credit-card input {
+    flex: 1;
+}
+
+button {
+    background-color: #8450a2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8450a2;
+}
+
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+    .delivery-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
